@@ -17,12 +17,12 @@ Target:
 
 - [x] Lecture - React Intro
 - [x] React: Class Component vs Function Component
-- [ ] Mempelajari State menggunakan useState
-- [ ] Mengirim Props baik berupa sebuah state atau function
-- [ ] Event Handling (onClick, onChange, onSubmit)
-- [ ] Conditional Rendering di dalam React
-- [ ] Looping List of Data di dalam React
-- [ ] Lifecycle component menggunakan useEffect
+- [x] Mempelajari State menggunakan useState
+- [x] Mengirim Props baik berupa sebuah state atau function
+- [x] Event Handling (onClick, onChange, onSubmit)
+- [x] Conditional Rendering di dalam React
+- [x] Looping List of Data di dalam React
+- [x] Lifecycle component menggunakan useEffect
 - [x] Membuat server (json-server)
 - [ ] Membuat react app untuk client-user (Styling)
 - [ ] Membuat react app untuk client-admin (CRUD)
@@ -43,16 +43,16 @@ Target:
 
 Target:
 
-- [ ] Lecture - Custom Hooks
-- [ ] Rules of Hooks
-- [ ] Lecture - React-Router
+- [x] Lecture - Custom Hooks
+- [x] Rules of Hooks
+- [x] Lecture - React-Router
 - [ ] Membuat router user-side (min: home, detail)
-- [ ] Membuat router admin-side (min: login, add admin, CRUD main entitas, CRUD another entitas)
+- [x] Membuat router admin-side (min: login, add admin, CRUD main entitas, CRUD another entitas)
 - [ ] Membuat privateRoute untuk admin
 
 **Report:**
 
-...
+> Hari ini saya sudah mencoba penggunaan router pada react untuk routing ke halaman home dan login
 
 ## W1D3
 
