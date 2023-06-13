@@ -15,23 +15,26 @@ Struktur Folder:
 
 Target:
 
-- [v] Lecture - React Intro
-- [ ] React: Class Component vs Function Component
+- [x] Lecture - React Intro
+- [x] React: Class Component vs Function Component
 - [ ] Mempelajari State menggunakan useState
 - [ ] Mengirim Props baik berupa sebuah state atau function
 - [ ] Event Handling (onClick, onChange, onSubmit)
 - [ ] Conditional Rendering di dalam React
 - [ ] Looping List of Data di dalam React
 - [ ] Lifecycle component menggunakan useEffect
-- [ ] Membuat server (json-server)
+- [x] Membuat server (json-server)
 - [ ] Membuat react app untuk client-user (Styling)
 - [ ] Membuat react app untuk client-admin (CRUD)
-- [ ] Menentukan Thema Aplikasi
-- [ ] Menentukan Design dan pemilihan CSS Framework
+- [x] Menentukan Thema Aplikasi
+- [x] Menentukan Design dan pemilihan CSS Framework
 
 **Report:**
 
-...
+> Hari ini saya memahami perbedaan class component dan function component dan juga basic menggunakan react dengan init vite@latest.
+> Saya sudah membuat json-server yang berisi data user, category dan juga menus yang digunakan untuk website
+> Pada challenge kali ini saya memilih tema product showcase yang akan menampilkan data tentang brand yang saya ambil dari referensi website jco
+> Untuk challenge ini saya mencoba menggunakan framework css chakra-ui tetapi menemui beberapa kesulitan karena sebagian besar contoh praktis penggunaan chakra ui adalah untuk react yang dibuat dengan Typescript
 
 > contoh: Hari ini saya belajar React Component. Saya memahami bagaimana cara React bekerja. Lifecycle yang sudah saya coba adalah componentDidMount yang digunakan untuk fetch data dst. Namun saya belum mencoba menggunakan onSubmit dikarenakan data yang didapat belum sesuai.
 > Pada tugas ini, saya memilih Tema A dengan mengambil referensi dari B. Saya juga akan menggunakan CSS Framework yaitu Tailwind CSS
