@@ -23,6 +23,7 @@ const Links = [
   { name: "Dashboard", link: "/" },
   { name: "Menu", link: "/menu" },
   { name: "Category", link: "/category" },
+  { name: "Admin Register", link: "/" },
 ];
 
 const NavLink = ({ children, href }) => (

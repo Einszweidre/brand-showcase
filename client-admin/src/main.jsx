@@ -8,11 +8,11 @@ import Navbar from "./layouts/navbar";
 import Footer from "./layouts/footer";
 import Login from "./pages/login";
 import MenuPage from "./pages/menus";
-import HomePage from "./pages/home";
-import CategoryPage from "./pages/category";
+import CategoryPage from "./pages/categories";
+import DashboardPage from "./pages/dashboard";
 
 const router = createBrowserRouter([
-  { path: "/", element: <HomePage /> },
+  { path: "/", element: <DashboardPage /> },
   { path: "/login", element: <Login /> },
   { path: "/menu", element: <MenuPage /> },
   { path: "/category", element: <CategoryPage /> },
