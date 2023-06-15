@@ -16,12 +16,18 @@ import {
   useColorModeValue,
   Stack,
 } from "@chakra-ui/react";
+// import { Link as RouteLink } from "react-router-dom";
 import { HamburgerIcon, CloseIcon, AddIcon } from "@chakra-ui/icons";
 
-const Links = ["Dashboard", "Projects", "Team"];
+const Links = [
+  { name: "Dashboard", link: "/" },
+  { name: "Menu", link: "/menu" },
+  { name: "Category", link: "/category" },
+];
 
-const NavLink = ({ children }) => (
+const NavLink = ({ children, href }) => (
   <Link
+    // as={RouteLink}
     px={2}
     py={1}
     rounded={"md"}
@@ -29,7 +35,7 @@ const NavLink = ({ children }) => (
       textDecoration: "none",
       bg: useColorModeValue("gray.200", "gray.700"),
     }}
-    href={"#"}
+    href={href}
   >
     {children}
   </Link>
@@ -37,6 +43,7 @@ const NavLink = ({ children }) => (
 
 NavLink.propTypes = {
   children: PropTypes.node.isRequired,
+  href: PropTypes.node.isRequired,
 };
 
 const Navbar = () => {
@@ -62,20 +69,18 @@ const Navbar = () => {
               display={{ base: "none", md: "flex" }}
             >
               {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
+                <NavLink key={link.name} href={link.link}>
+                  {link.name}
+                </NavLink>
               ))}
             </HStack>
           </HStack>
           <Flex alignItems={"center"}>
-            <Button
-              variant={"solid"}
-              colorScheme={"teal"}
-              size={"sm"}
-              mr={4}
-              leftIcon={<AddIcon />}
-            >
-              Action
-            </Button>
+            <NavLink href={"/login"}>
+              <Button variant={"solid"} colorScheme={"teal"} size={"sm"} mr={4}>
+                Login
+              </Button>
+            </NavLink>
             <Menu>
               <MenuButton
                 as={Button}
