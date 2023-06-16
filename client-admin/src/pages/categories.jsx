@@ -1,6 +1,6 @@
 import {
   Box,
-  // Button,
+  Button,
   Text,
   Table,
   Thead,
@@ -37,15 +37,16 @@ const CategoryPage = () => {
       <Text fontSize={"3xl"} align={"center"} fontWeight={"bold"} mb={10}>
         Category
       </Text>
-      {/* <Button colorScheme="teal" mb={4}>
-        Add New Menu
-      </Button> */}
+      <Button colorScheme="teal" mb={4}>
+        Add New Category
+      </Button>
 
       <Table variant="simple">
         <Thead>
           <Tr>
             <Th>No</Th>
             <Th>Category Name</Th>
+            <Th>Actions</Th>
           </Tr>
         </Thead>
         <Tbody>
@@ -53,6 +54,14 @@ const CategoryPage = () => {
             <Tr key={category.id}>
               <Td>{index + 1}</Td>
               <Td>{category.name}</Td>
+              <Td>
+                <Button colorScheme="blue" size="sm" mr={2}>
+                  Edit
+                </Button>
+                <Button colorScheme="red" size="sm">
+                  Delete
+                </Button>
+              </Td>
             </Tr>
           ))}
         </Tbody>

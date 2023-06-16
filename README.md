@@ -2,8 +2,8 @@
 
 # P3-Challenge-1
 
-- Tema Aplikasi: ...
-- CSS Framework: ...
+- Tema Aplikasi: Brand Showcase (Referensi website Jco https://www.jcodonuts.com/id/en)
+- CSS Framework: Chakra-UI
 
 Struktur Folder:
 
@@ -58,19 +58,20 @@ Target:
 
 Target:
 
-- [ ] Lecture - Redux
-- [ ] State vs Global State
-- [ ] Bagaimana cara membuat Store
-- [ ] Bagaimana cara membuat Reducer
-- [ ] Bagaimana cara membuat Action
-- [ ] Membuat Action Creators
-- [ ] Membuat Action Types
-- [ ] Lecture - Redux-thunk (handle async)
-- [ ] Cara menggunakan combineReducers
+- [x] Lecture - Redux
+- [x] State vs Global State
+- [x] Bagaimana cara membuat Store
+- [x] Bagaimana cara membuat Reducer
+- [x] Bagaimana cara membuat Action
+- [x] Membuat Action Creators
+- [x] Membuat Action Types
+- [x] Lecture - Redux-thunk (handle async)
+- [x] Cara menggunakan combineReducers
 
 **Report:**
 
-...
+> Hari ini saya belajar cara menggunakan redux dan juga menerapkan redux pada react
+> Pada project ini saya akan menggunakan redux untuk fetch data untuk user yang digunakan
 
 ## W1D4
 
