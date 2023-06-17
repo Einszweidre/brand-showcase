@@ -48,7 +48,7 @@
             "name": "Alcapone",
             "slug": "alcapone",
             "description": "Donut dipped in white chocolate and topped with sliced toasted almonds.",
-            "imgId": 1,
+            "mainImg": "https://api.vold.dev.fleava.com/pictures/5b39cd517169294aba251f43/donuts/4be290c0-6623-4407-afd9-773f88a0bdd3.jpg",
             "price": 8000,
             "categoryId": 1,
             "authorId": 1
@@ -58,7 +58,7 @@
             "name": "Avocado Dicaprio",
             "slug": "avocado-dicaprio",
             "description": "Donut filled with avocado cream, dipped in avocado chocolate, and garnished with dark chocolate flakes.",
-            "imgId": 2,
+            "mainImg": "https://api.vold.dev.fleava.com/pictures/5b39cd517169294aba251f43/donuts/bd66767e-3fdf-4c92-b822-50b524e094ff.jpg",
             "price": 8000,
             "categoryId": 1,
             "authorId": 1
@@ -68,7 +68,7 @@
             "name": "Berry Spears",
             "slug": "berry-spears",
             "description": "Donut filled with whipped cream cheese, dipped in strawberry jam, and garnished with white chocolate flakes.",
-            "imgId": 3,
+            "mainImg": "https://api.vold.dev.fleava.com/pictures/5b39cd517169294aba251f43/donuts/fcde6082-2a50-447c-bd1f-c022e7a74a67.jpg",
             "price": 8000,
             "categoryId": 1,
             "authorId": 1
@@ -78,7 +78,7 @@
             "name": "Black Jack",
             "slug": "black-jack",
             "description": "Donut fully encased in dark chocolate.",
-            "imgId": 4,
+            "mainImg": "https://api.vold.dev.fleava.com/pictures/5b39cd517169294aba251f43/donuts/8777fff0-1018-4495-b025-33bd4c2fefcd.jpg",
             "price": 8000,
             "categoryId": 1,
             "authorId": 1
@@ -88,7 +88,7 @@
             "name": "Blue Berrymore",
             "slug": "blue-berrymore",
             "description": "Donut filled with whipped cream cheese, dipped in blueberry jam, and garnished with white chocolate flakes.",
-            "imgId": 5,
+            "mainImg": "https://api.vold.dev.fleava.com/pictures/5b39cd517169294aba251f43/donuts/bd62cf8e-45a0-4ed9-a971-78ec60455055.jpg",
             "price": 8000,
             "categoryId": 1,
             "authorId": 1
@@ -98,7 +98,7 @@
             "name": "Caviar Chocolate",
             "slug": "caviar-chocolate",
             "description": "Donut dipped in hazelnut chocolate and sprinkled with dark chocolate coated crisps.",
-            "imgId": 6,
+            "mainImg": "https://api.vold.dev.fleava.com/pictures/5b39cd517169294aba251f43/donuts/a97bafad-2f9b-4148-9fc0-114ec47264c0.jpg",
             "price": 8000,
             "categoryId": 1,
             "authorId": 1
@@ -108,7 +108,7 @@
             "name": "Cheezy Rich",
             "slug": "cheezy-rich",
             "description": "Sweet donut sandwich featuring whipped cream cheese and sliced cheese filling, topped with whipped cream and shredded cheese.",
-            "imgId": 7,
+            "mainImg": "https://api.vold.dev.fleava.com/pictures/5b39cd517169294aba251f43/jclub/0ece25b8-1a63-4c15-8058-4a8f55553d2e.jpg",
             "price": 14000,
             "categoryId": 2,
             "authorId": 1
@@ -118,7 +118,7 @@
             "name": "Chicken Salami",
             "slug": "chicken-salami",
             "description": "Savory donut sandwich featuring smoked chicken salami with mayonnaise, tomato sauce, fresh lettuce, sliced cheese, and sauteed zucchinis.",
-            "imgId": 8,
+            "mainImg": "https://api.vold.dev.fleava.com/pictures/5b39cd517169294aba251f43/jclub/04c26634-689d-47e3-919b-635859d55221.jpg",
             "price": 14000,
             "categoryId": 2,
             "authorId": 1
@@ -128,7 +128,7 @@
             "name": "Katsu",
             "slug": "katsu",
             "description": "Savory donut sandwich featuring crunchy fried chicken katsu, fresh lettuce, fresh tomatoes, and barbecue sauce.",
-            "imgId": 9,
+            "mainImg": "https://api.vold.dev.fleava.com/pictures/5b39cd517169294aba251f43/jclub/a11e9b67-cd63-4d28-b044-1fe48c53bed1.jpg",
             "price": 14000,
             "categoryId": 2,
             "authorId": 1
@@ -138,7 +138,7 @@
             "name": "Red Velvet",
             "slug": "red-velvet",
             "description": "Sweet donut sandwich featuring 2 layers of whipped cream cheese filling, red velvet crumbs, and crunchy candied-peanut crumble.",
-            "imgId": 10,
+            "mainImg": "https://api.vold.dev.fleava.com/pictures/5b39cd517169294aba251f43/jclub/99fedc1e-8d04-484e-855e-e2da64be4854.jpg",
             "price": 14000,
             "categoryId": 2,
             "authorId": 1
@@ -148,7 +148,7 @@
             "name": "Sausage",
             "slug": "sausage",
             "description": "Savory donut sandwich featuring tender beef sausages, ketchup sauce, sauteed zucchinis, and fresh lettuce.",
-            "imgId": 11,
+            "mainImg": "https://api.vold.dev.fleava.com/pictures/5b39cd517169294aba251f43/jclub/0d31380b-8268-4576-b07a-06ab23fa4f9d.jpg",
             "price": 14000,
             "categoryId": 2,
             "authorId": 1
@@ -158,7 +158,7 @@
             "name": "Tuna Mayonnaise",
             "slug": "tuna-mayonaise",
             "description": "Savory donut sandwich featuring tuna with mayonnaise, fresh lettuce, and sliced cheese.",
-            "imgId": 12,
+            "mainImg": "https://api.vold.dev.fleava.com/pictures/5b39cd517169294aba251f43/jclub/7fd600cb-6d1b-4648-988b-fbf205b5d5ca.jpg",
             "price": 14000,
             "categoryId": 2,
             "authorId": 1
@@ -168,7 +168,7 @@
             "name": "Americano",
             "slug": "americano",
             "description": "Hot black coffee.",
-            "imgId": 13,
+            "mainImg": "https://api.vold.dev.fleava.com/pictures/5b39cd517169294aba251f43/jcoffee/d7c2fc34-eb5d-470f-81fc-336af0e66268.jpg",
             "price": 23000,
             "categoryId": 3,
             "authorId": 1
@@ -178,7 +178,7 @@
             "name": "Cafe Latte",
             "slug": "cafe-latte",
             "description": "Espresso shot mixed with steamed fresh milk.",
-            "imgId": 14,
+            "mainImg": "https://api.vold.dev.fleava.com/pictures/5b39cd517169294aba251f43/jcoffee/861c6a43-8dad-43f1-99e9-452952d6694c.jpg",
             "price": 31000,
             "categoryId": 3,
             "authorId": 1
@@ -188,7 +188,7 @@
             "name": "Caramel Frappe",
             "slug": "caramel-frappe",
             "description": "Espresso shot blended with ice nuggets, fresh milk, caramel syrup, topped with mocha cream, and garnished with caramel sauce.",
-            "imgId": 15,
+            "mainImg": "https://api.vold.dev.fleava.com/pictures/5b39cd517169294aba251f43/jcoffee/ed43f9e4-daaf-4cec-844e-03020463e4f4.jpg",
             "price": 34000,
             "categoryId": 3,
             "authorId": 1
@@ -198,7 +198,7 @@
             "name": "Avocado Frappe",
             "slug": "avocado-frappe",
             "description": "Espresso shot blended with ice nuggets, fresh milk, avocado powder, topped with mocha cream, and garnished with chocolate flakes.",
-            "imgId": 16,
+            "mainImg": "https://api.vold.dev.fleava.com/pictures/5b39cd517169294aba251f43/jcoffee/dd7bce00-6980-4c8e-b1ba-afba268860b1.jpg",
             "price": 34000,
             "categoryId": 3,
             "authorId": 1
@@ -208,7 +208,7 @@
             "name": "Caramel Jcoccino",
             "slug": "caramel-jcoccino",
             "description": "Espresso shot with steamed fresh milk, caramel syrup, and garnished with caramel sauce.",
-            "imgId": 17,
+            "mainImg": "https://api.vold.dev.fleava.com/pictures/5b39cd517169294aba251f43/jcoffee/1a141af0-f22b-41b8-a1fd-274ca99c64b6.jpg",
             "price": 35000,
             "categoryId": 3,
             "authorId": 1
@@ -218,7 +218,7 @@
             "name": "Espresso",
             "slug": "espresso",
             "description": "Strong & concentrated coffee shot.",
-            "imgId": 18,
+            "mainImg": "https://api.vold.dev.fleava.com/pictures/5b39cd517169294aba251f43/jcoffee/e77de158-7b3c-4b98-8be8-da2e9319297e.jpg",
             "price": 20000,
             "categoryId": 3,
             "authorId": 1
@@ -228,7 +228,7 @@
             "name": "Couple",
             "slug": "couple",
             "description": "Fat-free frozen yogurt in original or blueberry flavor with toppings of your choice.",
-            "imgId": 19,
+            "mainImg": "https://api.vold.dev.fleava.com/pictures/5b39cd517169294aba251f43/jcool/2a9b4b11-747e-4a36-931e-f7df6140eb7f.jpg",
             "price": 23000,
             "categoryId": 4,
             "authorId": 1
@@ -238,7 +238,7 @@
             "name": "Sharing",
             "slug": "sharing",
             "description": "Fat-free frozen yogurt in original or blueberry flavor with toppings of your choice.",
-            "imgId": 20,
+            "mainImg": "https://api.vold.dev.fleava.com/pictures/5b39cd517169294aba251f43/jcool/d77b4784-62ea-4dac-8e5c-63a85981c6ef.jpg",
             "price": 43000,
             "categoryId": 4,
             "authorId": 1
@@ -248,7 +248,7 @@
             "name": "Single",
             "slug": "single",
             "description": "Fat-free frozen yogurt in original or blueberry flavor with toppings of your choice.",
-            "imgId": 21,
+            "mainImg": "https://api.vold.dev.fleava.com/pictures/5b39cd517169294aba251f43/jcool/1ce0b922-10a1-412e-b826-94bdb1fa8e1a.jpg",
             "price": 23000,
             "categoryId": 4,
             "authorId": 1
@@ -258,7 +258,7 @@
             "name": "To Go",
             "slug": "to-go",
             "description": "Fat-free frozen yogurt in original or blueberry flavor with toppings of your choice, in convenient to-go packaging.",
-            "imgId": 22,
+            "mainImg": "https://api.vold.dev.fleava.com/pictures/5b39cd517169294aba251f43/jcool/2eaa82ca-73c9-400a-9e2d-12d820216922.jpg",
             "price": 55000,
             "categoryId": 4,
             "authorId": 1
@@ -268,7 +268,7 @@
             "name": "Blueberry Yogurt Frappe",
             "slug": "blueberry-yogurt-frappe",
             "description": "Mix berry juice mixed with blended ice nuggets, fresh yogurt, blueberry jam, topped with whipped cream.",
-            "imgId": 23,
+            "mainImg": "http://api.vold.dev.fleava.com/pictures/5b39cd517169294aba251f43/jcoffee/a0b26113-f804-4839-8303-f50f3ea00ce4.jpg",
             "price": 36000,
             "categoryId": 5,
             "authorId": 1
@@ -278,7 +278,7 @@
             "name": "Choco Forest Frappe",
             "slug": "choco-forest-frappe",
             "description": "Chocolate mixed with blended ice nuggets, fresh milk, dark chocolate cherry powder, topped with whipped cream, and garnished with chocolate flakes.",
-            "imgId": 24,
+            "mainImg": "http://api.vold.dev.fleava.com/pictures/5b39cd517169294aba251f43/jcoffee/dbd8793f-bb89-43be-a061-abce7112ce9a.jpg",
             "price": 36000,
             "categoryId": 5,
             "authorId": 1
@@ -288,7 +288,7 @@
             "name": "Chocolate Frappe",
             "slug": "chocolate-frappe",
             "description": "Chocolate mixed with blended ice nuggets, fresh milk, topped with whipped cream.",
-            "imgId": 25,
+            "mainImg": "http://api.vold.dev.fleava.com/pictures/5b39cd517169294aba251f43/jcoffee/2a1cadd7-4d5f-4e02-9a28-1964e09a84ac.jpg",
             "price": 38000,
             "categoryId": 5,
             "authorId": 1
@@ -298,7 +298,7 @@
             "name": "Chocomint Frappe",
             "slug": "chocomint-frappe",
             "description": "Chocolate mixed with blended ice nuggets, fresh milk, peppermint syrup, topped with whipped cream, and garnished with chocolate coated crisps.",
-            "imgId": 26,
+            "mainImg": "http://api.vold.dev.fleava.com/pictures/5b39cd517169294aba251f43/jcoffee/e9a1e75a-272b-4041-be72-2cafcb53379c.jpg",
             "price": 36000,
             "categoryId": 5,
             "authorId": 1
@@ -308,7 +308,7 @@
             "name": "Green Tea Frappe",
             "slug": "green-tea-frappe",
             "description": "Matcha and vanilla powder mixed with blended with ice nuggets, fresh milk, topped with whipped cream.",
-            "imgId": 27,
+            "mainImg": "http://api.vold.dev.fleava.com/pictures/5b39cd517169294aba251f43/jcoffee/4edcbe34-60e9-4c0f-8f29-cb0697f0d88b.jpg",
             "price": 36000,
             "categoryId": 5,
             "authorId": 1
@@ -318,7 +318,7 @@
             "name": "Green Tea Latte",
             "slug": "green-tea-latte",
             "description": "Hot/Iced matcha and vanilla mixed with fresh milk.",
-            "imgId": 28,
+            "mainImg": "http://api.vold.dev.fleava.com/pictures/5b39cd517169294aba251f43/jcoffee/18902e1e-73db-4c9f-886a-c1670fec394e.jpg",
             "price": 34000,
             "categoryId": 5,
             "authorId": 1
