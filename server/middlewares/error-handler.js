@@ -1,7 +1,10 @@
+const { errorResponse } = require("../helpers/jsonResponse");
+
 function errorHandler(error, req, res, next) {
   let status;
   let message;
 
+  console.log(error);
   switch (error.name) {
     case "SequelizeValidationError":
       status = 400;
@@ -37,7 +40,7 @@ function errorHandler(error, req, res, next) {
       message = "Internal Server Error";
       break;
   }
-  res.status(status).json({ message });
+  res.status(status).json(errorResponse(status, message));
 }
 
 module.exports = errorHandler;

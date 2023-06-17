@@ -15,6 +15,7 @@ module.exports = {
           model: "Menus",
           key: "id",
         },
+        onDelete: "CASCADE",
       },
       imgUrl: {
         type: Sequelize.STRING,

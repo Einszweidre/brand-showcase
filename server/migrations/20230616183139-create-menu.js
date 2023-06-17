@@ -12,6 +12,7 @@ module.exports = {
       name: {
         type: Sequelize.STRING,
         allowNull: false,
+        unique: true,
       },
       slug: {
         type: Sequelize.STRING,
@@ -42,6 +43,7 @@ module.exports = {
           model: "Categories",
           key: "id",
         },
+        onDelete: "CASCADE",
       },
       authorId: {
         type: Sequelize.INTEGER,

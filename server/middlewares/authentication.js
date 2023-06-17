@@ -3,9 +3,9 @@ const { decodeToken } = require("../helpers/encodeToken");
 
 async function authentication(req, res, next) {
   try {
-    let { webToken } = req.headers;
-    if (!webToken) throw { name: "Unauthenticated" };
-    const payload = decodeToken(webToken);
+    let { webtoken } = req.headers;
+    if (!webtoken) throw { name: "Unauthenticated" };
+    const payload = decodeToken(webtoken);
     const user = await User.findByPk(payload.id);
     if (!user) throw { name: "Unauthenticated" };
     req.user = {
@@ -19,25 +19,4 @@ async function authentication(req, res, next) {
   }
 }
 
-async function publicAuthentication(req, res, next) {
-  try {
-    let { webToken } = req.headers;
-    if (!webToken) throw { name: "Unauthenticated" };
-    const payload = decodeToken(webToken);
-    const customer = await Customer.findByPk(payload.id);
-    if (!customer) throw { name: "Unauthenticated" };
-    req.user = {
-      id: customer.id,
-      email: customer.email,
-      role: customer.role,
-    };
-    next();
-  } catch (error) {
-    next(error);
-  }
-}
-
-module.exports = {
-  authentication,
-  publicAuthentication,
-};
+module.exports = { authentication };

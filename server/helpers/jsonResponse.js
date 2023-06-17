@@ -6,14 +6,13 @@ function successResponse(data) {
   };
 }
 
-function errorResponse(code, message, attributes = null) {
+function errorResponse(code, message) {
   return {
     success: false,
     data: null,
     errors: {
       code: code,
       message: message,
-      attributes: attributes,
     },
   };
 }

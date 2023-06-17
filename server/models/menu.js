@@ -14,9 +14,11 @@ module.exports = (sequelize, DataTypes) => {
       });
       Menu.belongsTo(models.Category, {
         foreignKey: "categoryId",
+        onDelete: "CASCADE",
       });
       Menu.hasMany(models.Image, {
         foreignKey: "menuId",
+        onDelete: "CASCADE",
       });
     }
   }
@@ -25,6 +27,10 @@ module.exports = (sequelize, DataTypes) => {
       name: {
         type: DataTypes.STRING,
         allowNull: false,
+        unique: {
+          args: true,
+          msg: "Name already exist",
+        },
         validate: {
           notEmpty: {
             msg: "Name Required",
@@ -36,7 +42,6 @@ module.exports = (sequelize, DataTypes) => {
       },
       slug: {
         type: DataTypes.STRING,
-        allowNull: false,
       },
       description: {
         type: DataTypes.STRING,
@@ -73,7 +78,7 @@ module.exports = (sequelize, DataTypes) => {
             msg: "Image Required",
           },
           min: {
-            args: [5000],
+            args: 5000,
             msg: "Price must be at least 5000",
           },
         },
