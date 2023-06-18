@@ -24,7 +24,7 @@ const DashboardPage = () => {
         setMenuCount(menus.length);
         setCategoryCount(categories.length);
       });
-  });
+  }, []);
 
   if (isLoading) {
     return <Loading />;
