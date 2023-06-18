@@ -1,6 +1,7 @@
 import { FETCH_MENU, FETCH_MENU_DETAIL } from "./actionType";
 
-const baseUrl = "http://localhost:3000";
+// const baseUrl = "http://localhost:3000";
+const baseUrl = "https://brand-api.einszweidre.com";
 
 export const fetchMenuSuccess = (payload) => {
   return {

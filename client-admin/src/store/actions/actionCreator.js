@@ -14,7 +14,7 @@ import {
   CREATE_IMAGE,
 } from "./actionType";
 
-const baseUrl = "http://localhost:3000";
+const baseUrl = "https://brand-api.einszweidre.com";
 
 export const loginSuccess = (payload) => {
   return {
