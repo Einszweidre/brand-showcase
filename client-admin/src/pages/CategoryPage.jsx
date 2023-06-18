@@ -10,26 +10,25 @@ import {
   Td,
 } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import Loading from "../components/loading";
 import Navbar from "../layouts/navbar";
+import { fetchCategories } from "../store/actions/actionCreator";
 
 const CategoryPage = () => {
-  const [categories, setCategories] = useState([]);
+  const { categories } = useSelector((state) => state.category);
+  const [isLoading, setIsLoading] = useState(true);
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    fetch("http://localhost:3000/categories")
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        setCategories(data);
-      })
-      .catch((error) => {
-        console.log(error);
+    dispatch(fetchCategories())
+      .then()
+      .finally(() => {
+        setIsLoading(false);
       });
   }, []);
 
-  if (categories.length === 0) {
+  if (isLoading) {
     return <Loading />;
   }
 

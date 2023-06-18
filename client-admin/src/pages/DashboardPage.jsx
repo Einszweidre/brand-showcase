@@ -2,37 +2,31 @@ import { Box, Flex, Text } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import Loading from "../components/loading";
 import Navbar from "../layouts/navbar";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchCategories, fetchMenus } from "../store/actions/actionCreator";
 
 const DashboardPage = () => {
   // Replace these counts with your actual data
-  const [menuCount, setMenuCount] = useState(0);
-  const [categoryCount, setCategoryCount] = useState(0);
+  const { menus } = useSelector((state) => state.menu);
+  const { categories } = useSelector((state) => state.category);
+  const [isLoading, setIsLoading] = useState(true);
+  const [menuCount, setMenuCount] = useState(true);
+  const [categoryCount, setCategoryCount] = useState(true);
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    fetch("http://localhost:3000/menus")
-      .then((res) => {
-        return res.json();
+    dispatch(fetchMenus())
+      .then(() => {
+        return dispatch(fetchCategories());
       })
-      .then((data) => {
-        setMenuCount(data.length);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-
-    fetch("http://localhost:3000/categories")
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        setCategoryCount(data.length);
-      })
-      .catch((error) => {
-        console.log(error);
+      .finally(() => {
+        setIsLoading(false);
+        setMenuCount(menus.length);
+        setCategoryCount(categories.length);
       });
   });
 
-  if (menuCount.length === 0) {
+  if (isLoading) {
     return <Loading />;
   }
 
