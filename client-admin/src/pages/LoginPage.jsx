@@ -11,12 +11,17 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { loginAdmin } from "../store/actions/actionCreator";
+import { useNavigate } from "react-router-dom";
 
 export default function LoginPage() {
   const [login, setLogin] = useState({
     email: "",
     password: "",
   });
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   function handleForm(event) {
     setLogin({
@@ -25,13 +30,17 @@ export default function LoginPage() {
     });
   }
 
-  function handleLogin() {}
+  function handleLogin() {
+    dispatch(loginAdmin(login)).then(() => {
+      navigate("/");
+    });
+  }
 
   return (
     <>
       <Flex
         minH={"100vh"}
-        minW={"205vh"}
+        minW={"200vh"}
         align={"center"}
         justify={"center"}
         bg={useColorModeValue("gray.50", "gray.800")}

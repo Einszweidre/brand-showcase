@@ -1,6 +1,7 @@
 import { Box, Flex, Text } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import Loading from "../components/loading";
+import Navbar from "../layouts/navbar";
 
 const DashboardPage = () => {
   // Replace these counts with your actual data
@@ -37,6 +38,7 @@ const DashboardPage = () => {
 
   return (
     <>
+      <Navbar />
       <Flex
         justifyContent="center"
         alignItems="center"

@@ -4,29 +4,27 @@ import {
   Flex,
   Avatar,
   HStack,
-  Link,
   IconButton,
   Button,
   Menu,
   MenuButton,
   MenuList,
   MenuItem,
-  MenuDivider,
+  // MenuDivider,
   useDisclosure,
   useColorModeValue,
   Stack,
 } from "@chakra-ui/react";
-// import { Link as RouteLink } from "react-router-dom";
-import { HamburgerIcon, CloseIcon, AddIcon } from "@chakra-ui/icons";
+import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import { Link, useNavigate } from "react-router-dom";
 
 const Links = [
   { name: "Dashboard", link: "/" },
   { name: "Menu", link: "/menu" },
   { name: "Category", link: "/category" },
-  { name: "Admin Register", link: "/" },
 ];
 
-const NavLink = ({ children, href }) => (
+const NavLink = ({ children, to }) => (
   <Link
     // as={RouteLink}
     px={2}
@@ -36,7 +34,7 @@ const NavLink = ({ children, href }) => (
       textDecoration: "none",
       bg: useColorModeValue("gray.200", "gray.700"),
     }}
-    href={href}
+    to={to}
   >
     {children}
   </Link>
@@ -44,12 +42,18 @@ const NavLink = ({ children, href }) => (
 
 NavLink.propTypes = {
   children: PropTypes.node.isRequired,
-  href: PropTypes.node.isRequired,
+  to: PropTypes.node.isRequired,
 };
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const bgColor = useColorModeValue("gray.100", "gray.900");
+  const navigate = useNavigate();
+
+  function handleLogout() {
+    localStorage.clear();
+    navigate("/login");
+  }
 
   return (
     <>
@@ -70,18 +74,18 @@ const Navbar = () => {
               display={{ base: "none", md: "flex" }}
             >
               {Links.map((link) => (
-                <NavLink key={link.name} href={link.link}>
+                <NavLink key={link.name} to={link.link}>
                   {link.name}
                 </NavLink>
               ))}
             </HStack>
           </HStack>
           <Flex alignItems={"center"}>
-            <NavLink href={"/login"}>
+            {/* <NavLink to={"/login"}>
               <Button variant={"solid"} colorScheme={"teal"} size={"sm"} mr={4}>
                 Login
               </Button>
-            </NavLink>
+            </NavLink> */}
             <Menu>
               <MenuButton
                 as={Button}
@@ -98,10 +102,10 @@ const Navbar = () => {
                 />
               </MenuButton>
               <MenuList>
-                <MenuItem>Link 1</MenuItem>
+                {/* <MenuItem>Link 1</MenuItem>
                 <MenuItem>Link 2</MenuItem>
-                <MenuDivider />
-                <MenuItem>Link 3</MenuItem>
+                <MenuDivider /> */}
+                <MenuItem onClick={handleLogout}>Logout</MenuItem>
               </MenuList>
             </Menu>
           </Flex>
